@@ -1,0 +1,53 @@
+body {
+	background-color: ;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	background-color: #a7e39a;
+	padding: 10px 0;
+	width: 100%;
+	height: 100px;
+}
+
+ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+.logo {
+	line-height: 20px;
+	margin-left: 20px;
+}
+
+.links {
+	flex: 1;
+}
+
+.navlinks {
+	display: inline-block;
+	margin-right: 10%;
+}
+
+.theleft {
+	background-color: rgb(10, 100, 180);
+	height: calc(100vh - 120px);
+}
+
+.theright{
+	background-color: rgb(180, 60, 80);
+	height: calc(100vh - 120px);
+}
+
+.leftthing {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.rightthing {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
