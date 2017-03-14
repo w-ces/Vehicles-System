@@ -1,0 +1,42 @@
+/*body {
+	margin: 0;
+}*/
+
+.navbar{
+	overflow: hidden;
+	background: #FFFFFF;
+	padding: 2em 0;
+	border-bottom: 1px solid #232323;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar div{
+	display: inline-block;
+}
+
+.logo{
+	padding-left: 2em;
+}
+
+.logo a,
+.logo a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+.links{
+	flex: 1;
+}
+
+.menulinks li{
+	display: inline-block; 
+	padding-left:2em;
+}
+
+.menulinks a,
+.menulinks a:visited{
+	text-decoration: none;
+	color: rgba(0,0,0,0.54);
+}

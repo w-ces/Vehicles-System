@@ -1,0 +1,42 @@
+/** {
+	box-sizing: border-box;
+}*/
+
+.buttondad {
+				
+}
+
+.buttondad div {
+	margin-top: 130px;
+	float: left;
+	display: inline-block;
+	background-color: #232323;
+	width: 49%;
+	height: 300px;
+	transition: all 0.3s ease-in-out;
+}
+
+.leftdiv:hover {
+	background-color: #6495ED;
+}
+
+.rightdiv:hover {
+	background-color: #23925A;
+}
+
+.howitworks{
+	padding-top: 2px;
+}
+
+.center{
+	margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+h2{
+	color: rgba(0,0,0,0.54);
+	text-align: center;
+	/*padding-top: 2em;*/
+	margin-top: 200px;
+}
