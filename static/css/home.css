@@ -7,7 +7,6 @@
 }
 
 .buttondad div {
-	margin-top: 130px;
 	float: left;
 	display: inline-block;
 	background-color: #232323;
@@ -16,16 +15,35 @@
 	transition: all 0.3s ease-in-out;
 }
 
+.buttondad a,
+.buttondad a:visited{
+	text-decoration: none;
+	color: rgba(0,0,0,0.54);
+}
+
+.leftdiv{
+	text-align: right;
+}
+
+.leftdiv p, ul{
+	padding-right: 2em;
+}
+
 .leftdiv:hover {
 	background-color: #6495ED;
+	color: rgba(0,0,0,0.54);
+}
+
+.rightdiv{
+	text-align: left;
+}
+
+.rightdiv p, ul{
+	padding-left: 2em;
 }
 
 .rightdiv:hover {
 	background-color: #23925A;
-}
-
-.howitworks{
-	padding-top: 2px;
 }
 
 .center{
@@ -38,5 +56,22 @@ h2{
 	color: rgba(0,0,0,0.54);
 	text-align: center;
 	/*padding-top: 2em;*/
-	margin-top: 200px;
+	margin-top: 2em;
+}
+
+.info-title{
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.info-subtitle{
+	font-size: 20px;
+}
+
+.info-description{
+	padding-left: 2em;
+}
+
+.info-reasons{
+	list-style-type: none;
 }
