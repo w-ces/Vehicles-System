@@ -13,6 +13,10 @@
 	display: inline-block;
 }
 
+.catalogue div:hover{
+    background-color: rgba(0,0,0,0.54);
+}
+
 img {
 	height: 180px;
 	width: 250px;
@@ -51,4 +55,14 @@ input, select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    color: rgba(0,0,0,0.54);
+    font-size: 2em;
+}
+
+h3{
+    color: rgba(0,0,0,0.54);
 }
