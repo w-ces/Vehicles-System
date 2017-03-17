@@ -3,21 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>w-ces.V | Rent a car</title>
-	
-	<style type="text/css">
-		.catalogue div {
-			display: inline-block;
-		}
-
-		img {
-			height: 180px;
-			width: 250px;
-		}
-
-	</style>
 
 	<!-- <link rel="stylesheet" type="text/css" href="../static/css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="../static/css/reset2.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/rentarcar.css">
 
 
 </head>
@@ -31,35 +22,40 @@
 				<ul class="menulinks">
 					<li><a href="#howitworks">How it works</a></li>
 					<li><a href="#aboutus">About us</a></li>
-					<li><a href="#">Get Started</a></li>
+					<li><a href="signup.html">Get Started</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div style="background-color: #c2c2c2">
-		<hr>
-		<h2 id="choose"> Choose your favorite car type </h2>
-		<hr>
+	<div class="searchfield">
+		<form action="findcar.html">
+			<input type="text" name="searchcar" placeholder="Search your favorite car model..."/>
+			<input type="submit" value="Search">
+		</form>
 	</div>
 
 	<div class="catalogue">
+		<div>
+			<h2 id="choose"> Check out this offers: </h2>
+		</div>
 		<h3> Normal cars </h3>
+		
+		<a href="#" style="text-decoration: none;">
 		<div>
 			<img src="../static/images/car.jpg">
 			<br>
 			<label>Normal car #1</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
+		</a>
 
 		<div>
 			<img src="../static/images/car.jpg">
 			<br>
 			<label>Normal car #2</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 
@@ -68,7 +64,6 @@
 			<br>
 			<label>Normal car #3</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 
@@ -77,7 +72,6 @@
 			<br>
 			<label>Normal car #4</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 	</div>
@@ -89,7 +83,6 @@
 			<br>
 			<label>Bike #1</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 
@@ -98,7 +91,6 @@
 			<br>
 			<label>Bike #2</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 
@@ -107,7 +99,6 @@
 			<br>
 			<label>Bike #3</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 
@@ -116,7 +107,6 @@
 			<br>
 			<label>Bike #4</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 	</div>
@@ -128,7 +118,6 @@
 			<br>
 			<label>Moto #1</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 
@@ -137,7 +126,6 @@
 			<br>
 			<label>Moto #2</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 
@@ -146,7 +134,6 @@
 			<br>
 			<label>Moto #3</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 
@@ -155,7 +142,6 @@
 			<br>
 			<label>Moto #4</label>
 			<br>
-			<button>Rent this</button>
 			<p>	
 		</div>
 	</div>
@@ -171,7 +157,6 @@
 			<br>
 			<label>Normal car #4</label>
 			<br>
-			<button>Rent this</button>
 			<p>	You have this vehicle until <strong>TODAY</strong>!
 		</div>
 
@@ -180,14 +165,13 @@
 			<br>
 			<label>Moto #1</label>
 			<br>
-			<button>Rent this</button>
 			<p>	You have this vehicle until <strong>02/05/2017 23:59hrs</strong>
 		</div>
 	</div>
 
 	<footer>
-		<div style="background-color: #c2c2c2">
-			2017 - Gustavo A Carvalho; Thiago C Lucena; Yuri A Martins - Instituto Metrópole Digital - Universidade Federal do Rio Grande do Norte
+		<div class="footer">
+			<p>2017 - Gustavo A Carvalho; Thiago C Lucena; Yuri A Martins - Instituto Metrópole Digital - Universidade Federal do Rio Grande do Norte</p>
 		</div>
 	</footer>
 </body>
