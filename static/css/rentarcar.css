@@ -1,25 +1,29 @@
+a{
+    text-decoration: none;
+}
 .searchfield{
 	text-align: center;
 	padding: 2em 0 2em 2em;
 	background: #EEE;
 }
 
+.category-title{
+    padding-left: 2em;
+    color: rgba(0,0,0,0.54);
+}
 
 .catalogue{
-	padding: 0 2em;
+    border: 0;
+    text-align: center;
 }
 
 .catalogue div {
 	display: inline-block;
+    transition: all 0.16s ease-in-out;
 }
 
 .catalogue div:hover{
-    background-color: rgba(0,0,0,0.54);
-}
-
-img {
-	height: 180px;
-	width: 250px;
+    background-color: #EEE;
 }
 
 table, td, th {    
@@ -65,4 +69,23 @@ input, select {
 
 h3{
     color: rgba(0,0,0,0.54);
+}
+
+.offer{
+    padding: 2em 0 2em 0;
+    text-align: center;
+    width: 24%;
+    text-decoration: none;
+    color: rgba(0,0,0,0.54);
+}
+
+.offer-circle{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.offer-title{
+    padding-top: 1em;
+    font-size: 30px;
 }
