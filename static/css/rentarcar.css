@@ -12,9 +12,10 @@ a{
     color: rgba(0,0,0,0.54);
 }
 
-.catalogue{
+.catalogue {
     border: 0;
     text-align: center;
+    display: flex;
 }
 
 .catalogue div {
@@ -71,10 +72,14 @@ h3{
     color: rgba(0,0,0,0.54);
 }
 
+/*Keep this while there are still offers outside of links*/
+.catalogue a {
+    flex: 1;
+}
+
 .offer{
     padding: 2em 0 2em 0;
-    text-align: center;
-    width: 24%;
+    flex: 1;
     text-decoration: none;
     color: rgba(0,0,0,0.54);
 }
