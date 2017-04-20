@@ -1,0 +1,112 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.userbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1% 3%;
+	margin: 10px;
+	width: 80%;
+	background-color: #EEE;
+}
+
+.userbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 5px 0;
+	display: flex;
+	width: 100%;
+}
+
+.userbar h1 {
+	margin: 5px 0;
+}
+
+.userlinks li{
+	flex: 1;
+	text-align: center;
+}
+
+.cardisplay {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 3%;
+}
+
+.cardisplay > div{
+	width: 40%;
+	border-radius: 15px;
+}
+
+.borrowdiv {
+	background-color: blue;
+	margin-left: 8%;
+	margin-right: 2%;
+}
+
+.borrowdiv > h2 {
+	margin-left: 5%;
+}
+
+.lentdiv {
+	background-color: green;
+	margin-left: 2%;
+	margin-right: 8%;
+}
+
+.lentdiv > h2 {
+	text-align: right;
+	margin-right: 5%;
+}
+
+.borrowdiv > div, .lentdiv > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 0 3%;
+}
+
+.offer{
+	background-color: white;
+	width: 84%;
+	padding: 2% 5%;
+	margin: 0 3%;
+	display: flex;
+	transition: all 1s ease;
+}
+
+.offer:hover{
+	background-color: #EEE;
+}
+
+.offer h4, .offer p{
+	color: rgba(0,0,0,0.54);
+}
+
+.offer-circle{
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 2%;
+}
+
+.offer-info {
+	margin-left: 2%;
+}
+
+.offer-image {
+    position: absolute; 
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

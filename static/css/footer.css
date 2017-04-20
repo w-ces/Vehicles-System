@@ -1,9 +1,13 @@
+footer {
+	width: 100%;
+}
+
 .footer{
 	background-color: #232323;
 	padding: 2em 0;
 	color: #EEE;
 }
 
-.footer p{
+.footer * {
 	text-align: center;
 }
