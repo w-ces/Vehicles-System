@@ -39,6 +39,11 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+/*hide navbar login button on login page*/
+.loginbuttons * {
+    visibility: hidden;
+}
+
 .login_page{
     width: 100%;
     padding: 20px;
