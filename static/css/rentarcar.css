@@ -18,13 +18,16 @@ a{
     display: flex;
 }
 
-.catalogue div {
-	display: inline-block;
+.catalogue a {
     transition: all 0.16s ease-in-out;
 }
 
-.catalogue div:hover{
+.catalogue a:hover {
     background-color: #EEE;
+}
+
+.catalogue div {
+	display: inline-block;
 }
 
 table, td, th {    
@@ -79,6 +82,7 @@ h3{
 
 .offer{
     padding: 2em 0 2em 0;
+    margin: 0 0.5em;
     flex: 1;
     text-decoration: none;
     color: rgba(0,0,0,0.54);
@@ -90,7 +94,6 @@ h3{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    
 }
 
 .offer-image {
