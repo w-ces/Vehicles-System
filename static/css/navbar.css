@@ -59,22 +59,19 @@ nav {
 
 .loginbuttons {
 	flex-grow: 70;
-	display: flex;
 }
 
-.loginbuttons * {
-	flex: 1;
-	font-size: 15px;
-	text-align: right;
+.loginbuttons a {
+	float: right;
 	margin-right: 3%;
 }
 
 .loginbuttons button {
-    background-color: #4CAF50; /* Green */
+    background-color: #297373; /* Green */
     border: none;
     border-radius: 4px;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 21px;
     margin-right: 0;
     text-align: center;
     text-decoration: none;
@@ -83,7 +80,7 @@ nav {
 }
 
 .loginbuttons button:hover {
-    background-color: #45a049;
+    background-color: #59a3a3;
 }
 
 /*#login_item {
