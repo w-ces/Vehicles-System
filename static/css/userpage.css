@@ -31,6 +31,20 @@ body {
 	text-align: center;
 }
 
+.userbar a,
+.userbar a:visited{
+	padding: 3px;
+	text-decoration: none;
+	color: black;
+}
+
+.userbar a:hover {
+	padding: 3px;
+	background-color: green;
+	color: #EEE;
+	border-radius: 8px;
+}
+
 .cardisplay {
 	width: 100%;
 	display: flex;
