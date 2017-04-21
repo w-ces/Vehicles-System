@@ -9,7 +9,19 @@ input, select {
 }
 
 label {
-    margin-right: 2em;
+    display: inline-block;
+    width: 66px;
+    margin-right: 1em;
+}
+
+input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type=submit] {
@@ -52,16 +64,13 @@ input[type=submit]:hover {
 
 .login_page_form{
     margin: auto;
-    width: 30%;
+    width: 35%;
     padding: 20px;
     background-color: #EEE;
 }
 
 .login-title{
+    text-align: center;
     color: rgba(0,0,0,0.54);
     font-size: 2em;
-}
-
-#submit_button {
-    /*width: 90%;*/
 }

@@ -1,5 +1,14 @@
+.signup {
+    margin: auto;
+    width: 60%;
+}
+
+body {
+    background-color: #EEE;
+}
+
 input, select {
-    width: 100%;
+    width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -9,11 +18,16 @@ input, select {
 }
 
 label {
+    display: inline-block;
+    width: 76px;
     margin-right: 2em;
 }
 
 input[type=submit] {
-    width: 100%;
+    position: relative;
+    left: 35%;
+    right: 35%;
+    width: 30%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -33,6 +47,7 @@ input[type=submit]:hover {
 }
 
 .signup-title{
+    text-align: center;
     color: rgba(0,0,0,0.54);
     font-size: 2em;
 }
