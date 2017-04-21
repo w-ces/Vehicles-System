@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 input, select {
     width: 100%;
     padding: 12px 20px;
@@ -29,7 +33,7 @@ input[type=submit] {
     left: 30%;
     right: 30%;
     width: 40%;
-    background-color: #4CAF50;
+    background-color: #297373;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

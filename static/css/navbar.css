@@ -5,6 +5,10 @@ nav {
 	width: 100%;
 }
 
+button {
+	font-family: 'Roboto', sans-serif;
+}
+
 .navbar{
 	/*overflow: hidden;*/
 	padding: 0.5em 0;
@@ -15,6 +19,7 @@ nav {
 	display: flex;
 	width: 100%;
 	align-items: center;
+	font-family: 'Oswald', sans-serif;
 }
 
 .logo {

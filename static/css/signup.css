@@ -5,6 +5,7 @@
 
 body {
     background-color: #EEE;
+    font-family: 'Roboto', sans-serif;
 }
 
 input, select {
@@ -19,7 +20,7 @@ input, select {
 
 label {
     display: inline-block;
-    width: 76px;
+    width: 83px;
     margin-right: 2em;
 }
 
@@ -28,7 +29,7 @@ input[type=submit] {
     left: 35%;
     right: 35%;
     width: 30%;
-    background-color: #4CAF50;
+    background-color: #297373;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
