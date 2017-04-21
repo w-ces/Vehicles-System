@@ -8,7 +8,6 @@ body {
 .buttondad {
 	display: flex;
 	flex-direction: row;
-	/*font-family: 'Noto Sans', sans-serif;*/
 }
 
 .buttondad div {

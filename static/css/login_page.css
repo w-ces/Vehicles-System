@@ -33,7 +33,7 @@ input[type=submit] {
     left: 30%;
     right: 30%;
     width: 40%;
-    background-color: #297373;
+    background-color: #2C7689;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -52,7 +52,7 @@ input[type=checkbox] {
 
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color:  #2C7669;
 }
 
 /*hide navbar login button on login page*/
