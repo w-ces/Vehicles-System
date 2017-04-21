@@ -35,8 +35,13 @@ a{
 }
 
 .offer{
-	padding: 2em;
+	background-color: white;
+	width: 84%;
+	padding: 2% 5%;
+	margin: 0 3%;
+	display: flex;
 	transition: all 1s ease;
+	align-items: center;
 }
 
 .offer:hover{
@@ -51,9 +56,13 @@ a{
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    
+    width: 150px;
+    height: 150px;
+    margin-right: 2%;
+}
+
+.offer-info {
+	margin-left: 2%;
 }
 
 .offer-image {
