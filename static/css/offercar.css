@@ -2,12 +2,15 @@ a{
 	text-decoration: none;
 }
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 .new-offer{
 	background-color: #005b96;
 	padding: 3em 2em;
 	/*text-transform: uppercase;*/
 	transition: all 1s ease;
-	font-family: 'Josefin Sans', sans-serif;
 }
 
 .new-offer:hover{
