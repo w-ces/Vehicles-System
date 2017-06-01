@@ -1,21 +1,21 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f2f1e8;
+}
+
 a{
 	text-decoration: none;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-}
-
 .new-offer{
-	background-color: #005b96;
+	background-color: #036c7a;
 	padding: 3em 2em;
 	/*text-transform: uppercase;*/
 	transition: all 1s ease;
 }
 
 .new-offer:hover{
-	background-color: #03396c;
-	color: white;
+	background-color: #188c9b;
 }
 
 .button-title{
@@ -38,7 +38,7 @@ body {
 }
 
 .offer{
-	background-color: white;
+	/*background-color: white;*/
 	width: 84%;
 	padding: 2% 5%;
 	margin: 0 3%;
@@ -48,7 +48,7 @@ body {
 }
 
 .offer:hover{
-	background-color: #EEE;
+	background-color: #CCC;
 }
 
 .offer h4, .offer p{
@@ -82,7 +82,7 @@ body {
 }
 
 .sub-navbar{
-	background-color: #EEE;
+	background-color: #f2f1e8;
 	padding: 1em;
 }
 

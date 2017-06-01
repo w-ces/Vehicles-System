@@ -4,12 +4,13 @@ a{
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f2f1e8;
 }
 
 .searchfield{
 	text-align: center;
 	padding: 2em 0 2em 2em;
-	background: #EEE;
+	background: #f2f1e8;
 }
 
 .category-title{
@@ -28,7 +29,7 @@ body {
 }
 
 .catalogue a:hover {
-    background-color: #EEE;
+    background-color: #CCC;
 }
 
 .catalogue div {
@@ -50,7 +51,7 @@ th, td {
 }
 
 input[type=submit] {
-    background-color: #2C7689;
+    background-color: #036c7a;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -61,7 +62,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color:  #2C7669;
+    background-color:  #188c9b;
 }
 
 input, select {

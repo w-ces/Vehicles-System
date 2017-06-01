@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f2f1e8;
 }
 
 input, select {
@@ -33,7 +34,7 @@ input[type=submit] {
     left: 30%;
     right: 30%;
     width: 40%;
-    background-color: #2C7689;
+    background-color: #036c7a;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -45,14 +46,14 @@ input[type=submit] {
 input[type=checkbox] {
     height: 15px;
     width: 15px;
-    background-color: #2C7689;
+    background-color: #036c7a;
     color: white;
     cursor: pointer;
 }
 
 
 input[type=submit]:hover {
-    background-color:  #59a3a3;
+    background-color:  #188c9b;
 }
 
 /*hide navbar login button on login page*/
@@ -63,14 +64,14 @@ input[type=submit]:hover {
 .login_page{
     width: 100%;
     padding: 20px;
-    background-color: #EEE;
+    background-color: #f2f1e8;
 }
 
 .login_page_form{
     margin: auto;
     width: 35%;
     padding: 20px;
-    background-color: #EEE;
+    background-color: #f2f1e8;
 }
 
 .login-title{
