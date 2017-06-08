@@ -9,6 +9,20 @@
 		<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Roboto">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).on('click', 'a[href^="#"]', function(e) {
+			    var id = $(this).attr('href');
+			    var $id = $(id);
+			    if ($id.length === 0) {
+			        return;
+			    }
+			    e.preventDefault();
+			    var pos = $id.offset().top;
+			    $('body, html').animate({scrollTop: pos});
+			});
+		</script>
+
 	</head>
 	<body>
 		<nav class="navbar">
@@ -17,8 +31,8 @@
 			</div>
 			<div class="links">
 				<ul class="menulinks">
-					<li><a href="home.html#howitworks">How it works</a></li>
-					<li><a href="home.html#aboutus">About us</a></li>
+					<li><a href="#howitworks">How it works</a></li>
+					<li><a href="#aboutus">About us</a></li>
 				</ul>
 			</div>
 			<div class="loginbuttons">
