@@ -14,12 +14,11 @@ button {
 	padding: 0.5em 0;
 	background-color: #232323;
 	border-bottom: 1px solid #232323;
-	/*position: fixed;
-	top: 0;*/
 	display: flex;
 	width: 100%;
 	align-items: center;
 	font-family: 'Oswald', sans-serif;
+	margin-bottom: 0 !important;
 }
 
 .logo {

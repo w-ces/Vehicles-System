@@ -4,11 +4,23 @@
 		<meta charset="UTF-8">
 		<title>w-ces.V</title>
 
-		<link rel="stylesheet" type="text/css" href="../static/css/reset2.css">
+
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- <link rel="stylesheet" type="text/css" href="../static/css/reset2.css"> -->
 		<link rel="stylesheet" type="text/css" href="../static/css/home.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Roboto">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>
 			$(document).on('click', 'a[href^="#"]', function(e) {
@@ -40,39 +52,54 @@
 				<a href="login.html"><button>Login</button></a>
 			</div>
 		</nav>
-		
-		<div class="buttondad">
-			<a href="rentacar.html">
-				<div class="leftdiv">
-					<p class="info-title">Rent a Car</p>
 
-					<p class="info-subtitle">Escape from car rental companies!</p>
+		<div class="container-fluid">
+			<div class="row buttondad">
+				<a href="rentacar.html">
+					<div class="col-md-6 leftdiv">
+						<div class="img-overlay">
+			                <img src="../static/images/home2.jpeg" class="image"/>
+			                <div class="project-overlay-left infos">
+			                	<p class="info-title">Rent a Car</p>
 
-					<p class="info-description">Choose the best and most suitable vehicle for you</p>
+								<p class="info-subtitle">Escape from car rental companies!</p>
 
-					<ul class="info-reasons">
-						<li> Reason one</li>
-						<li> Reason two</li>
-						<li> Reason three</li>
-					</ul>
-				</div>
-			</a>
-			<a href="offercar.html">
-				<div class="rightdiv">
-					<p class="info-title">Offer your Car</p>
+								<p class="info-description">Choose the best and most suitable vehicle for you</p>
 
-					<p class="info-subtitle">Get your vehicle in motion. Get something in return!</p>
+								<ul class="info-reasons">
+									<li> Reason one</li>
+									<li> Reason two</li>
+									<li> Reason three</li>
+								</ul>
+			                </div>
+			            </div>
+					</div>
+				</a>
+				
+				<a href="offercar.html">
+					<div class="col-md-6 rightdiv">
+						<div class="img-overlay"	>
+			                <img src="../static/images/home3.jpeg" class="image"/>
+			                <div class="project-overlay-right infos">
+								<p class="info-title">Offer your Car</p>
 
-					<p class="info-description">Earn extra cash by offering your vehicle to others</p>
+								<p class="info-subtitle">Get your vehicle in motion. Get something in return!</p>
 
-					<ul class="info-reasons">
-						<li> Reason one</li>
-						<li> Reason two</li>
-						<li> Reason three</li>
-					</ul>
-				</div>
-			</a>
+								<p class="info-description">Earn extra cash by offering your vehicle to others</p>
+
+								<ul class="info-reasons">
+									<li> Reason one</li>
+									<li> Reason two</li>
+									<li> Reason three</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
+
+
 
 		<div class="howitworks" id="howitworks">
 			<h2>How it works</h2>
