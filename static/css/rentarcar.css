@@ -1,3 +1,7 @@
+.slick-prev:before, .slick-next:before { 
+	    color:black !important;
+}
+
 a{
     text-decoration: none;
 }
@@ -5,6 +9,12 @@ a{
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f2f1e8;
+}
+
+.content {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
 }
 
 .searchfield{
@@ -19,20 +29,20 @@ body {
 }
 
 .catalogue {
-    border: 0;
+    /*border: 0;*/
     text-align: center;
-    display: flex;
+    /*display: flex;*/
 }
 
-.catalogue a {
-    transition: all 0.16s ease-in-out;
-}
+/*.catalogue a {*/
+/*    transition: all 0.16s ease-in-out;*/
+/*}*/
 
 .catalogue a:hover {
     background-color: #CCC;
 }
 
-.catalogue div {
+.catalogue .offer-circle {
 	display: inline-block;
 }
 
@@ -83,11 +93,6 @@ input, select {
 
 h3{
     color: rgba(0,0,0,0.54);
-}
-
-/*Keep this while there are still offers outside of links*/
-.catalogue a {
-    flex: 1;
 }
 
 .offer{
