@@ -1,0 +1,4 @@
+{"modelo":"Uno","preco":"1200"}
+{"modelo":"Palio","preco":"1000"}
+{"modelo":"Logan","preco":"1500"}
+{"modelo":"Camaro","preco":"5000"}
