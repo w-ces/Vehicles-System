@@ -37,25 +37,11 @@
 
 	</head>
 	<body>
-		<nav class="navbar">
-			<div class="logo">
-				<h1><a href="home.html"> w-ces.V </a></h1>
-			</div>
-			<div class="links">
-				<ul class="menulinks">
-					<li><a href="#howitworks">How it works</a></li>
-					<li><a href="#aboutus">About us</a></li>
-				</ul>
-			</div>
-			<div class="loginbuttons">
-				<a href="signup.html"><button>Get Started</button></a>
-				<a href="login.html"><button>Login</button></a>
-			</div>
-		</nav>
+		<?php include('navbar.php'); ?>
 
 		<div class="container-fluid">
 			<div class="row buttondad">
-				<a href="rentacar.html">
+				<a href="rentacar.php">
 					<div class="col-md-6 leftdiv">
 						<div class="img-overlay">
 			                <img src="../static/images/home2.jpeg" class="image"/>
@@ -76,7 +62,7 @@
 					</div>
 				</a>
 				
-				<a href="offercar.html">
+				<a href="offercar.php">
 					<div class="col-md-6 rightdiv">
 						<div class="img-overlay"	>
 			                <img src="../static/images/home3.jpeg" class="image"/>
@@ -152,10 +138,7 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
-		<footer>
-			<div class="footer">
-				<p>2017 - Gustavo A Carvalho; Thiago C Lucena; Yuri A Martins - Instituto Metrópole Digital - Universidade Federal do Rio Grande do Norte</p>
-			</div>
-		</footer>
+		
+		<?php include('footer.php'); ?>
 	</body>
 </html>

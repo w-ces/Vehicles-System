@@ -4,31 +4,17 @@
 		<meta charset="UTF-8">
 		<title>w-ces.V</title>
 
-		<link rel="stylesheet" type="text/css" href="../static/css/reset2.css">
-		<link rel="stylesheet" type="text/css" href="../static/css/login_page.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/login_page.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/reset2.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Roboto">
 	</head>
 	<body>
-		<nav class="navbar">
-			<div class="logo">
-				<h1><a href="home.html"> w-ces.V </a></h1>
-			</div>
-			<div class="links">
-				<ul class="menulinks">
-					<li><a href="home.html#howitworks">How it works</a></li>
-					<li><a href="home.html#aboutus">About us</a></li>
-				</ul>
-			</div>
-			<div class="loginbuttons">
-				<a href="signup.html"><button>Get Started</button></a>
-				<a href="login.html"><button>Login</button></a>
-			</div>
-		</nav>
+		<?php include('navbar.php'); ?>
 		
 		<div class="login_page">
-			<form class="login_page_form" action="userhome.html">
+			<form class="login_page_form" action="userhome.php">
 				<p class="login-title"> Sign in to start renting!</p>
 				<label for="first_name">Email:</label>
 				<input type="text" name="email" placeholder="Email" required />
@@ -41,10 +27,7 @@
 				<input type="submit" name="submit" id="submit_button" value="Login"/>
 			</form>
 		</div>
-		<footer>
-			<div class="footer">
-				<p>2017 - Gustavo A Carvalho; Thiago C Lucena; Yuri A Martins - Instituto Metrópole Digital - Universidade Federal do Rio Grande do Norte</p>
-			</div>
-		</footer>
+		
+		<?php include('footer.php'); ?>
 	</body>
 </html>
