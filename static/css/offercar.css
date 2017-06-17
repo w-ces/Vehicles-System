@@ -8,14 +8,14 @@ a{
 }
 
 .new-offer{
-	background-color: #036c7a;
+	background-color: rgba(37, 130, 83, 1);
 	padding: 3em 2em;
 	/*text-transform: uppercase;*/
 	transition: all 1s ease;
 }
 
 .new-offer:hover{
-	background-color: #188c9b;
+	background-color: rgba(37, 130, 83, 0.9);
 }
 
 .button-title{
