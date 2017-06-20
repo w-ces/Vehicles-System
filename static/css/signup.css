@@ -24,7 +24,7 @@ label {
     margin-right: 2em;
 }
 
-input[type=submit] {
+input[type=button] {
     position: relative;
     left: 35%;
     right: 35%;
@@ -38,7 +38,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
     background-color:  #188c9b;
 }
 

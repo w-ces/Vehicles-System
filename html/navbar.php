@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
+
 <nav class="navbar">
 	<div class="logo">
 		<h1><a href="home.php"> w-ces.V </a></h1>
