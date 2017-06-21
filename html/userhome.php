@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/userpage.css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Roboto">
+	<!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Roboto">-->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>

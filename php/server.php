@@ -74,7 +74,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 } else {
     $response = new stdClass();
     $response->status = false;
-    $response->reason = "just";
     echo json_encode($response);
 }
 ?>

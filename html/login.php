@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="../static/css/login_page.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/reset2.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Roboto">
+		<!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald|Roboto">-->
 	</head>
 	<body>
 		<?php include('navbar.php'); ?>

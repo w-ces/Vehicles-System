@@ -1,4 +1,2 @@
-{"modelo":"Uno","preco":"1200"}
-{"modelo":"Palio","preco":"1000"}
-{"modelo":"Logan","preco":"1500"}
-{"modelo":"Camaro","preco":"5000"}
+{"modelo":"Lamborghini","preco":"3000","duracao":"72","dono":"Gustavo Carvalho","local":"Natal - RN"}
+{"modelo":"Corsa","preco":"100","duracao":"96","dono":"Gustavo Carvalho","local":"Natal - RN"}

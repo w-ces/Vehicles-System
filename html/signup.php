@@ -134,11 +134,11 @@
                         if (json.status) {
                             document.getElementById("confirmation").innerHTML = "Cadastro com sucesso!";
                         } else {
-                            target.innerHTML = json.reason;
-                            // target.innerHTML = "Email already exists";
+                            // target.innerHTML = json.reason;
+                            target.innerHTML = "Email already exists";
                         }
                     } else {
-                        target.innerHTML = "Server communication failed";
+                        target.innerHTML = "Server communication failed!";
                     }
                 };
                 

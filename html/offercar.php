@@ -23,7 +23,7 @@
 			</ul>
 		</div>
 
-		<a href="#">
+		<a href="register_vehicle.php">
 		<div class="new-offer">
 			<div>
 				<h3 class="button-title">Start now by offering your car for other users</h3>
@@ -73,54 +73,6 @@
 			
 			
 			?>
-
-			<!--<a class="offer" href="#">-->
-			<!--	<div class="offer-circle">-->
-			<!--		<img class="offer-image" src="../static/images/car.jpg">-->
-			<!--	</div>-->
-			<!--	<div class="offer-info">-->
-			<!--		<h4>Car #1</h4>-->
-			<!--		<p class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 20/04/2017 <i class="fa fa-clock-o" aria-hidden="true"></i> 15:00</p>-->
-			<!--		<p class="by">Alugado por Gustavo Araújo Carvalho</p>-->
-			<!--		<p class="detail">Click to view in detail</p>-->
-			<!--	</div>-->
-			<!--</a>-->
-
-			<!--<a class="offer" href="#">-->
-			<!--	<div class="offer-circle">-->
-			<!--		<img class="offer-image" src="../static/images/car.jpg">-->
-			<!--	</div>-->
-			<!--	<div class="offer-info">-->
-			<!--		<h4>Car #1</h4>-->
-			<!--		<p class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 20/04/2017 <i class="fa fa-clock-o" aria-hidden="true"></i> 15:00</p>-->
-			<!--		<p class="by">Alugado por Gustavo Araújo Carvalho</p>-->
-			<!--		<p class="detail">Click to view in detail</p>-->
-			<!--	</div>-->
-			<!--</a>-->
-
-			<!--<a class="offer" href="#">-->
-			<!--	<div class="offer-circle">-->
-			<!--		<img class="offer-image" src="../static/images/car.jpg">-->
-			<!--	</div>-->
-			<!--	<div class="offer-info">-->
-			<!--		<h4>Car #1</h4>-->
-			<!--		<p class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 20/04/2017 <i class="fa fa-clock-o" aria-hidden="true"></i> 15:00</p>-->
-			<!--		<p class="by">Alugado por Gustavo Araújo Carvalho</p>-->
-			<!--		<p class="detail">Click to view in detail</p>-->
-			<!--	</div>-->
-			<!--</a>-->
-
-			<!--<a class="offer" href="#">-->
-			<!--	<div class="offer-circle">-->
-			<!--		<img class="offer-image" src="../static/images/car.jpg">-->
-			<!--	</div>-->
-			<!--	<div class="offer-info">-->
-			<!--		<h4>Car #1</h4>-->
-			<!--		<p class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 20/04/2017 <i class="fa fa-clock-o" aria-hidden="true"></i> 15:00</p>-->
-			<!--		<p class="by">Alugado por Gustavo Araújo Carvalho</p>-->
-			<!--		<p class="detail">Click to view in detail</p>-->
-			<!--	</div>-->
-			<!--</a>-->
 
 			<div id="talks">
 				<h3 class="session-title">Your talks</h3>

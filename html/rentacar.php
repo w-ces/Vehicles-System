@@ -1,3 +1,47 @@
+<?php
+function getShortVehiclesList($filename) {
+    $arr = array();
+    $file=fopen("../database/" . $filename . ".txt", r) or die("unable to open file!");
+    $counter = 0;
+    while(!feof($file) and $counter < 10) {
+        $readLine = fgets($file);
+        if ($readLine != "") {
+            $readVeh = json_decode($readLine);
+            $arr[] = $readVeh;
+            $counter = $counter + 1;
+        }
+    }
+    return $arr;
+}
+
+function getVehiclesInfo($type) {
+	$vehiArray = getShortVehiclesList($type);
+	
+	if (empty($vehiArray)) {
+		echo "<h2 class=\"category-title\">There's no vehicle of this type in our database</h2>";
+		return;
+	}
+	
+	foreach($vehiArray as $vec) {
+	    echo "<a href=\"vehicle.php\" class=\"offer\">\n";
+		echo "	<div>\n";
+		echo "		<div class=\"offer-circle\">\n";
+		echo " 			<img class=\"offer-image\" src=\"../static/images/" . $type . ".jpg\">\n";
+		echo " 		</div>\n";
+		echo " 		<br>\n";
+		echo "		<div class=\"offer-title\">" . $vec->modelo . "</div>\n";
+		echo " 			<br>\n";
+		echo " 			<div class=\"offer-value\">\$" . $vec->preco . ",00</div> - <STRONG>" . $vec->duracao . "hrs</STRONG> of usage\n";
+		echo " 			<br>\n";
+		echo " 			<div class=\"offer-info\">" . $vec->dono . "</div> in " . $vec->local . "\n";
+		echo " 			<br>\n";
+		echo " 	</div>\n";
+		echo "</a>\n";
+	}
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +52,7 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/rentarcar.css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Roboto">
 	<link rel="stylesheet" type="text/css" href="../static/js/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../static/js/slick/slick-theme.css"/>
 	
 	
@@ -34,362 +76,55 @@
 	</div>
 	
 	<div class="content">
-		<h2 class="category-title"> Normal cars </h2>
+		<a href="vehicle_list.php"><h2 class="category-title">Cars</h2></a>
+		<div class="catalogue"><?php getVehiclesInfo("car")?></div>
 	
-		<div class="catalogue slider">
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #1</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #2</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #3</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #4</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #5</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #6</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #7</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #8</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #9</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #10</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #11</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #12</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
-			
-			<a href="#" class="offer">
-				<div>
-						<div class="offer-circle">
-							<img class="offer-image" src="../static/images/car.jpg">
-						</div>
-						<br>
-						<div class="offer-title">Normal car #13</div>
-						<br>
-						<div class="offer-value">$50,00</div> - <STRONG>24hrs</STRONG> of usage
-						<br>
-						<div class="offer-info">YuriAlessandro</div> in Natal
-						<br>
-				</div>
-			</a>
+		<a href="vehicle_list.php"><h2 class="category-title">Bycicles</h2></a>
+		<div class="catalogue"><?php getVehiclesInfo("bike")?></div>
 	
-				
-		</div>
-	
-		<h2 class="category-title">Bikes</h2>
-	
-		<div class="catalogue">
-			<a href="#" class="offer">
-				<div class="offer-circle">
-					<img class="offer-image" src="../static/images/vec.jpg">
-				</div>
-				<br>
-				<div class="offer-title">Bike</div>
-				<br>
-				<div class="offer-value">$10,00</div> - <STRONG>12hrs</STRONG> of usage
-				<br>
-				<div class="offer-info">YuriAlessandro</div> in Natal
-				<br>	
-			</a>
-	
-			<a href="#" class="offer">
-				<div class="offer-circle">
-					<img class="offer-image" src="../static/images/vec.jpg">
-				</div>
-				<br>
-				<div class="offer-title">Bike</div>
-				<br>
-				<div class="offer-value">$10,00</div> - <STRONG>12hrs</STRONG> of usage
-				<br>
-				<div class="offer-info">YuriAlessandro</div> in Natal
-				<br>	
-			</a>
-	
-			<a href="#" class="offer">
-				<div class="offer-circle">
-					<img class="offer-image" src="../static/images/vec.jpg">
-				</div>
-				<br>
-				<div class="offer-title">Bike</div>
-				<br>
-				<div class="offer-value">$10,00</div> - <STRONG>12hrs</STRONG> of usage
-				<br>
-				<div class="offer-info">YuriAlessandro</div> in Natal
-				<br>	
-			</a>
-	
-			<a href="#" class="offer">
-				<div class="offer-circle">
-					<img class="offer-image" src="../static/images/vec.jpg">
-				</div>
-				<br>
-				<div class="offer-title">Bike</div>
-				<br>
-				<div class="offer-value">$10,00</div> - <STRONG>12hrs</STRONG> of usage
-				<br>
-				<div class="offer-info">YuriAlessandro</div> in Natal
-				<br>	
-			</a>
-		</div>
-	
-		<h2 class="category-title"> Motos </h2>
-		
-		<div class="catalogue">
-			<a href="#" class="offer">
-				<div class="offer-circle">
-					<img class="offer-image" src="../static/images/moto.jpg">
-				</div>
-				<br>
-				<div class="offer-title">Moto</div>
-				<br>
-				<div class="offer-value">$25,00</div> - <STRONG>24hrs</STRONG> of usage
-				<br>
-				<div class="offer-info">YuriAlessandro</div> in Natal
-				<br>	
-			</a>
-			
-			<a href="#" class="offer">
-				<div class="offer-circle">
-					<img class="offer-image" src="../static/images/moto.jpg">
-				</div>
-				<br>
-				<div class="offer-title">Moto</div>
-				<br>
-				<div class="offer-value">$25,00</div> - <STRONG>24hrs</STRONG> of usage
-				<br>
-				<div class="offer-info">YuriAlessandro</div> in Natal
-				<br>	
-			</a>
-			
-			<a href="#" class="offer">
-				<div class="offer-circle">
-					<img class="offer-image" src="../static/images/moto.jpg">
-				</div>
-				<br>
-				<div class="offer-title">Moto</div>
-				<br>
-				<div class="offer-value">$25,00</div> - <STRONG>24hrs</STRONG> of usage
-				<br>
-				<div class="offer-info">YuriAlessandro</div> in Natal
-				<br>	
-			</a>
-	
-			<a href="#" class="offer">
-				<div class="offer-circle">
-					<img class="offer-image" src="../static/images/moto.jpg">
-				</div>
-				<br>
-				<div class="offer-title">Moto</div>
-				<br>
-				<div class="offer-value">$25,00</div> - <STRONG>24hrs</STRONG> of usage
-				<br>
-				<div class="offer-info">YuriAlessandro</div> in Natal
-				<br>	
-			</a>
-		</div>
+		<a href="vehicle_list.php"><h2 class="category-title">Motorcycles</h2></a>
+		<div class="catalogue"><?php getVehiclesInfo("moto")?></div>
 	</div>
 
 	<?php include('footer.php'); ?>
 	
 	<script type="text/javascript">
 	$(document).ready(function(){
-		$('.catalogue').slick({
-			dots: true,
-			infinite: true,
-			speed: 2000,
-			slidesToShow: 4,
-			slidesToScroll: 4,
-			responsive: [
-				{
-					breakpoint: 1025,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 3,
-						infinite: true,
-						dots: true
-					}
-				},
-				{
-					breakpoint: 601,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2
-					}
-				},
-				{
-					breakpoint: 481,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
-		});
+		$('.catalogue').each(function() {
+			if ($(this).html().substring(0,3) != "<h2")
+				$(this).slick({
+					dots: true,
+					infinite: true,
+					speed: 1000,
+					slidesToShow: 4,
+					slidesToScroll: 4,
+					responsive: [
+						{
+							breakpoint: 1025,
+							settings: {
+								slidesToShow: 3,
+								slidesToScroll: 3,
+								infinite: true,
+								dots: true
+							}
+						},
+						{
+							breakpoint: 601,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2
+							}
+						},
+						{
+							breakpoint: 481,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+		})
 	});
 	</script>
 	

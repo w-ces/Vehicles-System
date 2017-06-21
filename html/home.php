@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>w-ces.V</title>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 		<!-- Latest compiled and minified CSS -->
@@ -15,13 +16,12 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-		<!-- <link rel="stylesheet" type="text/css" href="../static/css/reset2.css"> -->
 		<link rel="stylesheet" type="text/css" href="../static/css/home.css">
-		<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">
-		<link rel="stylesheet" type="text/css" href="../static/css/footer.css">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Roboto+Slab">
+		<!--<link rel="stylesheet" type="text/css" href="../static/css/navbar.css">-->
+		<!--<link rel="stylesheet" type="text/css" href="../static/css/footer.css">-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script>
 			$(document).on('click', 'a[href^="#"]', function(e) {
 			    var id = $(this).attr('href');
@@ -89,7 +89,33 @@
 
 		<div class="howitworks" id="howitworks">
 			<h2>How it works</h2>
-
+			
+			<div class="container-fluid text-center">
+				<div class="row">
+					<div class="col-md-3 htw">
+						<p class="icon"><i class="fa fa-key" aria-hidden="true"></i></p>
+						<p class="icon-msg">Offer your vehicle to other users</p>
+					</div>
+					
+					<div class="col-md-3 htw">
+						<p class="icon"><i class="fa fa-search" aria-hidden="true"></i></p>
+						<p class="icon-msg">Search for offered vehicles</p>
+					</div>
+					
+					<div class="col-md-3 htw">
+						<p class="icon"><i class="fa fa-car" aria-hidden="true"></i></p>
+						<p class="icon-msg">Rent the best vehicle for you</p>
+					</div>
+					
+					<div class="col-md-3 htw">
+						<p class="icon"><i class="fa fa-money" aria-hidden="true"></i></p>
+						<p class="icon-msg">Make money renting vehicles</p>
+					</div>
+				</div>
+			</div>
+			
+			<br>
+			
 			<p class="long-text">w-ces.V is a collaborative vehicles renting system. Using principles of 
 			shared economy, we offer an online platform to serve as an interface for 
 			people around the world who want to rent their own vehicles and/or look up to
@@ -108,36 +134,36 @@
 			<p class="long-text">No bureaucracy. No expensive fares. Renting vehicles from users to users.</p>
 
 		</div>
-		<div class="abaoutus" id="aboutus">
-			<h2>About us</h2>
-			<p class="long-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<!--<div class="abaoutus" id="aboutus">-->
+		<!--	<h2>About us</h2>-->
+		<!--	<p class="long-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+		<!--		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,-->
+		<!--		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo-->
+		<!--		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse-->
+		<!--		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non-->
+		<!--	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
 
-			<p class="long-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<!--	<p class="long-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+		<!--		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,-->
+		<!--		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo-->
+		<!--		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse-->
+		<!--		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non-->
+		<!--	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
 
-			<p class="long-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<!--	<p class="long-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+		<!--		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,-->
+		<!--		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo-->
+		<!--		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse-->
+		<!--		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non-->
+		<!--	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
 
-			<p class="long-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
+		<!--	<p class="long-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+		<!--		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,-->
+		<!--		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo-->
+		<!--		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse-->
+		<!--		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non-->
+		<!--	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+		<!--</div>-->
 		
 		<?php include('footer.php'); ?>
 	</body>

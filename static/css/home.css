@@ -1,6 +1,3 @@
-/** {
-	box-sizing: border-box;
-}*/
 body {
 	background-color: #f2f1e8;
 }
@@ -139,4 +136,29 @@ h2{
 
 .image{
 	width: 100%;
+}
+
+.icon{
+	font-size: 4em;
+}
+
+.icon-msg{
+	font-size: 1.5em;
+}
+
+.htw{
+	padding: 3em;
+	transition: ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 480px) {
+	.htw{
+		padding: 1em;
+	}
+	
+}
+
+.htw:hover{
+	background-color: #232323;
+	color: #FAFAFA;
 }

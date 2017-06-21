@@ -1,0 +1,7 @@
+{"modelo":"Ferrari","preco":"2000","duracao":"72","dono":"Yuri Alessandro","local":"Natal - RN"}
+{"modelo":"Lamborghini","preco":"3000","duracao":"72","dono":"Gustavo Carvalho","local":"Natal - RN"}
+{"modelo":"Corsa","preco":"100","duracao":"96","dono":"Gustavo Carvalho","local":"Natal - RN"}
+{"modelo":"Porsche","preco":"1500","duracao":"48","dono":"Thiago César","local":"Natal - RN"}
+{"modelo":"Fusca","preco":"10","duracao":"72","dono":"Yuri Alessandro","local":"Natal - RN"}
+{"modelo":"Brasília","preco":"20","duracao":"72","dono":"Yuri Alessandro","local":"Natal - RN"}
+{"tipo":"Car","categoria":"Hatch","modelo":"Uno","combustivel":"Gasoline","local":"Caic\u00f3","cor":"Vermelho","preco":"50","duracao":72,"dono":"Anonymous"}

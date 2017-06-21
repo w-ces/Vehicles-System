@@ -1,0 +1,3 @@
+{"modelo":"Lambreta","preco":"20","duracao":"24","dono":"Yuri Alessandro","local":"Natal - RN"}
+{"tipo":"Motorcycle","categoria":"Hatch","modelo":"Suzuki","combustivel":"Gasoline","local":"Natal","cor":"Azul","preco":"100","duracao":168,"dono":"Anonymous"}
+{"tipo":"Motorcycle","categoria":"Hatch","modelo":"Yamaha","combustivel":"Gasoline","local":"Caic\u00f3","cor":"Vermelho","preco":"50","duracao":72,"dono":"Anonymous"}
